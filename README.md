@@ -12,6 +12,7 @@ create topic:  ./bin/kafka-topics.sh \
 
 zookeeper runs at 2181 , broker/server at 9092
 
+more fns include, msg.key(), msg.offset(), msg.partition(), msg.value(), msg.timestamp(). msg.headers(), msg.topic()
 
 within the files Producer.py creates the messages. Above we are creating a kafka topic (test_topic) with 3 partitions.
 Why 3? Because I want to test different scenarios of consumers (below)
